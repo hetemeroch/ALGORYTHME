@@ -1,0 +1,28 @@
+FUNCTION PRODUIT_SCALAIRE(v1,v2) INTEGER
+VAR :
+  
+  i := 0 : INTEGER
+  j := 0 : INTEGER
+  sum := 0 : INTEGER
+
+BEGIN 
+
+  FOR i FROM v1.length DO
+  FOR j FROM v2.length DO
+
+   sum = sum + (v1[i]*v2[i])
+
+  END FOR
+  END FOR
+   return sum
+
+END
+
+ALGO SCAL INTEGER
+
+VAR :
+   v1 : READ (ARRAY_OF INTEGER)
+   v2 : READ (ARRAY_OF INTEGER)
+BEGIN 
+   WRITE(PRODUIT_SCALAIRE(v1,v2))
+END

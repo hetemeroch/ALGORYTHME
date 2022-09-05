@@ -1,0 +1,30 @@
+PROCEDURE PRODUIT_SCALAIRE(v1,v2) INTEGER
+VAR :
+     
+     long1 := v1.length : INTEGER
+     long2 := v2.length : INTEGER
+     i := 0 : INTEGER
+     j := 0 : INTEGER
+     sum := 0 : INTEGER
+BEGIN
+
+     FOR i FROM 0 TO long1 DO
+     FOR j FROM 0 TO long2 DO
+
+     sum = sum + v1[i]*v2[j]
+
+     END FOR
+     END FOR
+
+     WRITE (sum)
+
+END
+
+ALGORITHME PROCE
+VAR :
+     v1 : READ (ARRAY_OF INTEGER)
+     v2 : READ (ARRAY_OF INTEGER)
+
+BEGIN     
+    PROPRODUIT_SCALAIRECE(v1,v2)
+END
